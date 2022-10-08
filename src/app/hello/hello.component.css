@@ -1,0 +1,8 @@
+.d-flex {
+  display: flex;
+  column-gap: 16px;
+}
+
+.bg-red {
+  background-color: #c03e3e;
+}

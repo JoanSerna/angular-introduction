@@ -1,0 +1,7 @@
+<p>list-colors works!</p>
+<section>
+  <p *ngFor="let color of colors; let i = index"
+     (click)="colorSelect(color.label,i)" [ngClass]="{'isSelected':color.isSelected}">
+    {{color.label}}
+  </p>
+</section>

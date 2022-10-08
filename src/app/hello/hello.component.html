@@ -1,0 +1,20 @@
+<p>hello works!</p>
+
+
+
+<section>
+  <h2>*ngIf</h2>
+  <button *ngIf="!!colors.length">Botón de prueba</button>
+</section>
+
+<section>
+  <h2>*ngFor</h2>
+  <div *ngFor="let color of colors; let i = index; let par = even"
+       class="d-flex">
+    <section [ngClass]="{'bg-red':par}">
+      <p>Es par: {{par}}</p>
+      <p>Posición: {{i}}</p>
+      <p>Valor: {{color}}</p>
+    </section>
+  </div>
+</section>
